@@ -1,3 +1,21 @@
+@font-face {
+    font-family: 'robotolight';
+    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
+    url('../fonts/roboto-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 @keyframes slide-1 {
     0% { left: 0; }
     30% { left: 0; }
@@ -35,7 +53,7 @@
 .slider .slider__nav {}
 
 .slide {
-    padding: 10px;
+
     width: 100%;
     min-height: 300px;
     box-sizing: border-box;
@@ -44,35 +62,51 @@
     animation-duration: 14s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color:white;
+    font-family: 'robotoregular', sans-serif;
 }
 
 .slide:first-child {
-    background-color: lightcoral;
+    background-image: url("../images/z25355845Q,Dagmara-Kowalska.jpg");
+
     left: 0;
-    animation-name: slide-1;
+    /*animation-name: slide-1;*/
     /*animation-duration: 4s;*/
     /*animation-delay: 2s;*/
     /*animation-direction: alternate;*/
 }
 
 .slide:nth-child(2) {
-    background-color: #7171d3;
+    background-image: url("../images/Y3c9MTE3MCZjaD01MTM=_src_21167-aaarimac-C_two.jpg");
     left: 100%;
-    animation-name: slide-2;
+    /*animation-name: slide-2;*/
 }
 
 .slide:last-child {
     background-color: #83a983;
     z-index: 10;
     left: 200%;
-    animation-name: slide-3;
+    /*animation-name: slide-3;*/
 }
-
+.slide .slider__cover {
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
 
 .slide .slide__hdl {
     margin: 0;
+    /*font-weight: 400;*/
 }
-.slide .slide__text {}
+.slide .slide__text {
+    font-family: robotolight;
+    /*font-weight: 100;*/
+}
 .slide .slide__link {}
 
 .nav {}
