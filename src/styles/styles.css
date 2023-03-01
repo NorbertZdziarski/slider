@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'robotolight';
+    font-family: 'Roboto Light';
     src: url('../fonts/roboto-light-webfont.woff2') format('woff2'),
     url('../fonts/roboto-light-webfont.woff') format('woff');
     font-weight: normal;
@@ -8,13 +8,13 @@
 }
 
 @font-face {
-    font-family: 'robotoregular';
+    font-family: 'Roboto Regular';
     src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'),
     url('../fonts/roboto-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-
 }
+
 
 @keyframes slide-1 {
     0% { left: 0; }
@@ -43,6 +43,7 @@
     100% { left: 0; }
 }
 
+
 .slider {}
 .slider .slider__slides {
     position: relative;
@@ -53,7 +54,6 @@
 .slider .slider__nav {}
 
 .slide {
-
     width: 100%;
     min-height: 300px;
     box-sizing: border-box;
@@ -65,34 +65,31 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    color:white;
-    font-family: 'robotoregular', sans-serif;
+    color: white;
+    font-family: 'Roboto Regular', sans-serif;
+
 }
 
 .slide:first-child {
-    background-image: url("../images/z25355845Q,Dagmara-Kowalska.jpg");
-
     left: 0;
     /*animation-name: slide-1;*/
-    /*animation-duration: 4s;*/
-    /*animation-delay: 2s;*/
-    /*animation-direction: alternate;*/
+    background-image: url("../images/slide-1.jpg");
 }
 
 .slide:nth-child(2) {
-    background-image: url("../images/Y3c9MTE3MCZjaD01MTM=_src_21167-aaarimac-C_two.jpg");
     left: 100%;
     /*animation-name: slide-2;*/
+    background-image: url("../images/slide-2.jpg");
 }
 
 .slide:last-child {
-    background-color: #83a983;
-    z-index: 10;
     left: 200%;
     /*animation-name: slide-3;*/
+    background-image: url("../images/slide-3.jpg");
 }
-.slide .slider__cover {
-    background-color: rgba(0,0,0,0.4);
+
+.slide .slide__cover {
+    background-color: rgba(0, 0, 0, .3);
     padding: 10px;
     position: absolute;
     bottom: 0;
@@ -102,10 +99,11 @@
 .slide .slide__hdl {
     margin: 0;
     /*font-weight: 400;*/
+    font-family: 'Roboto Regular', sans-serif;
 }
 .slide .slide__text {
-    font-family: robotolight;
     /*font-weight: 100;*/
+    font-family: 'Roboto Light', sans-serif;
 }
 .slide .slide__link {}
 
